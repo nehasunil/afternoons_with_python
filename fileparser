@@ -13,3 +13,5 @@ for line in read_write_file_pointer:
     output_file_pointer.write(line)
 read_write_file_pointer.close()
 output_file_pointer.close()
+
+print("hello world")
