@@ -3,7 +3,6 @@ import sys
 months = ["January","February", "March", "April","May","June","July","August","September","October","November","December"]
 
 def month_to_string(month_num):
-    # TODO: write month return logic here
     try:
         if int(month_num) < 1:
             raise IndexError("Not a valid month number")
