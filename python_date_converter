@@ -1,0 +1,20 @@
+import sys
+
+months = ["January","February", "March", "April","May","June","July","August","September","October","November","December"]
+
+def month_to_string(month_num):
+    # TODO: write month return logic here
+    try:
+        if int(month_num) < 1:
+            raise IndexError("Not a valid month number")
+        return months[int(month_num) - 1]
+    except(EOFError, IndexError, TypeError, ValueError):
+        print("Not a valid month number")
+
+def main():
+    month_num = input('enter a month number: ')
+    month_name = month_to_string(month_num)
+    if month_name != None:
+        print("Month #{} is {}".format(month_num, month_name))
+
+if __name__ == "__main__": main()
